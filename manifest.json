@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Band Camp Volume Slider",
+  "version": "1.0",
+  "description": "Adds a volume slider to https://Bandcamp.com",
+  "icons": {
+    "48": "icons/48x48.png",
+    "96": "icons/96x96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.bandcamp.com/*"],
+      "js": ["bandcamp-volume-slider.js"]
+    }
+  ]
+}
